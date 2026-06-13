@@ -5,6 +5,10 @@
   <title>Siwen Sheng</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Icons: Font Awesome + Academicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -20,10 +24,11 @@
       margin-bottom: 40px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 12px;
+      text-align: center;
     }
 
     nav a {
-      margin-right: 20px;
+      margin: 0 12px;
       text-decoration: none;
       color: #333;
       font-weight: bold;
@@ -34,32 +39,63 @@
     }
 
     .profile {
-      display: flex;
-      gap: 30px;
-      align-items: flex-start;
-      margin-bottom: 30px;
+      text-align: center;
+      margin-bottom: 45px;
     }
 
     .profile img {
-      width: 220px;
-      border-radius: 8px;
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 35px auto;
     }
 
     h1 {
-      font-size: 2.4em;
-      margin-bottom: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 3.3em;
+      font-weight: normal;
+      margin: 0 0 20px 0;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.8em;
+      color: #111;
+      margin: 0 0 25px 0;
+      line-height: 1.4;
+    }
+
+    .welcome {
+      font-size: 1.05em;
+      color: #444;
+      margin-top: 15px;
+    }
+
+    .social-icons {
+      margin-top: 25px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 12px;
+      font-size: 32px;
+      color: #222;
+      text-decoration: none;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .social-icons a:hover {
+      color: #005eb8;
+      transform: translateY(-3px);
     }
 
     h2 {
       margin-top: 40px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 6px;
-    }
-
-    .subtitle {
-      font-size: 1.1em;
-      color: #555;
-      margin-top: 5px;
     }
 
     a {
@@ -72,16 +108,35 @@
       border-top: 1px solid #ddd;
       color: #666;
       font-size: 0.9em;
+      text-align: center;
     }
 
     @media (max-width: 700px) {
-      .profile {
-        display: block;
+      body {
+        margin: 25px auto;
       }
 
       .profile img {
-        width: 180px;
-        margin-bottom: 20px;
+        width: 230px;
+        height: 230px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      .subtitle {
+        font-size: 1.35em;
+      }
+
+      .social-icons a {
+        font-size: 28px;
+        margin: 0 8px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
       }
     }
   </style>
@@ -93,22 +148,40 @@
     <a href="index.html">About me</a>
     <a href="publications.html">Publication</a>
     <a href="research.html">Research</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <div class="profile">
-    <div>
-      <!-- Later you can replace this with your own photo -->
-      <img src="profile.jpg" alt="Siwen Sheng">
+    <img src="profile.jpg" alt="Siwen Sheng">
+
+    <h1>Siwen Sheng</h1>
+
+    <p class="subtitle">
+      PhD candidate at the Bernoulli Institute for Artificial Intelligence
+    </p>
+
+    <div class="social-icons">
+      <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="https://scholar.google.com/citations?user=YOUR-ID" target="_blank" title="Google Scholar">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://orcid.org/YOUR-ORCID-ID" target="_blank" title="ORCID">
+        <i class="ai ai-orcid"></i>
+      </a>
     </div>
 
-    <div>
-      <h1>Siwen Sheng</h1>
-      <p class="subtitle">PhD candidate at the Bernoulli Institute for Artificial Intelligence</p>
-
-      <p>
-        Hey all, and welcome to my webpage!
-      </p>
-    </div>
+    <p class="welcome">
+      Hey all, and welcome to my webpage!
+    </p>
   </div>
 
   <h2>About</h2>
